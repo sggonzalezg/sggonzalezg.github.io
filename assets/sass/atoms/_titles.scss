@@ -1,0 +1,30 @@
+%section-title {
+    width: 100%;
+    display: block;
+    float: left;
+    margin-bottom: $spacing * 2;
+    @include MQ(S) {
+        position: absolute;
+        float: none;
+        width: auto;
+        display: initial;
+    }
+    h3 {
+        float: left;
+        font-family: $font-family-primary;
+        text-transform: uppercase;
+        padding-bottom: $spacing * 1.5;
+        border-bottom: 1px solid $brand-color;
+        @include MQ(S) {
+            padding-top: $spacing * 3;
+            border-top: 1px solid $brand-color;
+            padding-bottom: 0;
+            border-bottom: none;
+            transform: rotate(-90deg);
+            transform-origin: right top;
+            position: absolute;
+            right: 0;
+            writing-mode: lr-tb;
+        }
+    }
+}

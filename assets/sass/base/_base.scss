@@ -1,0 +1,47 @@
+body {
+  background: $body-background-color;
+  color: $copy-color;
+}
+section {
+    min-height: calc(100vh - #{$spacing} * 15.5);
+    padding-top: $spacing * 15.5;
+    @extend .clearfix;
+
+    p {
+        @include font-size($font-size-base);
+        margin-bottom: $spacing * 1.5;
+    }
+}
+// Container
+.container {
+    padding-right: $spacing * 1.5;
+    padding-left: $spacing * 1.5;
+    margin-right: auto;
+    margin-left: auto;
+    @include MQ(S) {
+        width: 730px;
+    }
+    @include MQ(M) {
+        width: 970px;
+    }
+    @include MQ(L) {
+        width: 1200px;
+    }
+}
+
+.content {
+    padding: $spacing * 10 0 $spacing * 5;
+    .main {
+        margin-top: $spacing * 3;
+    }
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}

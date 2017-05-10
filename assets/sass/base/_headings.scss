@@ -1,0 +1,36 @@
+h1 {
+  @include font-size($font-size-h1-mobile);
+  @include MQ(S) {
+    @include font-size($font-size-h1);
+  }
+  margin-bottom: $spacing * 2;
+}
+
+h2 {
+  @include font-size($font-size-h2-mobile);
+  @include MQ(S) {
+    @include font-size($font-size-h2);
+  }
+  margin-bottom: $spacing * 1.5;
+}
+
+h3 {
+  @include font-size($font-size-h3-mobile);
+  @include MQ(S) {
+    @include font-size($font-size-h3);
+  }
+}
+
+h4 {
+  @include font-size($font-size-h4-mobile);
+  @include MQ(S) {
+    @include font-size($font-size-h4);
+  }
+}
+
+h5 {
+  @include font-size($font-size-h5-mobile);
+  @include MQ(S) {
+    @include font-size($font-size-h5);
+  }
+}
